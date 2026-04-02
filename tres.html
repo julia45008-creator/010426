@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <style>
+        body{
+            text-align: center;
+            background-color:#1c023b;
+            color:#e1d4f1
+             
+        }
+
+        button{
+             border-radius: 200px;
+             font-size: 50px;
+             color: #360079;
+             background-color: #ebd2f5;
+        }
+
+    </style>
+
+</head>
+
+<body  >
+
+    <p id="contador" style="font-size: 50px;" >Cliques: 0</p>
+
+    <button  onclick="contar()"  >Clique aqui</button>
+
+    <script>
+        let cliques = 0;
+
+        function contar() {
+            cliques = cliques + 1;
+            document.getElementById("contador").innerHTML = "Cliques: " + cliques;
+        }
+    </script>
+
+</body>
+</html>
